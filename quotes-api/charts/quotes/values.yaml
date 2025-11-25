@@ -1,0 +1,7 @@
+image:
+  repository: quotes-api
+  tag: "1.0.0"
+replicaCount: 2
+ingress:
+  enabled: true
+  host: quotes.local

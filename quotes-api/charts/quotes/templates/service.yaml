@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "quotes.fullname" . }}-svc
+spec:
+  selector:
+    app: {{ include "quotes.name" . }}
+  ports:
+    - port: 80
+      targetPort: 8000
+      protocol: TCP
